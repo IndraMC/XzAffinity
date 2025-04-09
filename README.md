@@ -51,7 +51,7 @@ Developed by **IndraMC**, XzAffinity features an intuitive UI system powered by 
 
 ## ⚙️ Configuration
 
-XzAffinity is highly configurable. You can customize all messages, affinity types, and maximum limits in the `settings.yml` file.
+XzAffinity is highly configurable. You can customize all messages in the `config.yml` file, and you can customize affinity types and maximum limits in the `settings.yml` file.
 
 ### Default Affinity Types
 - Lovers (Default max: 1)
@@ -59,7 +59,7 @@ XzAffinity is highly configurable. You can customize all messages, affinity type
 - Siblings (Default max: 5)
 - Rivals (Default max: 3)
 
-### Example Configuration
+### Example settings.yml
 ```yaml
 # Affinity types and their maximum limits
 affinity_types:
