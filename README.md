@@ -67,7 +67,6 @@ affinity_types:
   - "Best Friends"
   - "Siblings"
   - "Rivals"
-  - "Mentors"
 
 max_affinities:
   "Lovers": 1
