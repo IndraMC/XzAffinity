@@ -74,6 +74,5 @@ max_affinities:
   "Best Friends": 3
   "Siblings": 5
   "Rivals": 3
-  "Mentors": 2
 
 # You can customize all messages in the messages section
