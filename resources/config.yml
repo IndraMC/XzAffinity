@@ -1,0 +1,153 @@
+# XzAffinity Configuration
+# Plugin by IndraMC
+
+# Messages
+messages:
+  # General messages
+  no_permission: "&cYou don't have permission to use this command."
+  player_not_found: "&cPlayer {player} not found."
+  
+  # Request messages
+  request_usage: "&cUsage: /affinity request <player> <type>"
+  cannot_request_self: "&cYou cannot send an affinity request to yourself."
+  invalid_type: "&c{type} is not a valid affinity type. Available types: {types}"
+  request_sent: "&aYou have sent an affinity request to {player} for {type}."
+  request_received: "&a{player} has sent you an affinity request for {type}. Use /affinity accept {player} to accept it or open the UI with /affinity."
+  request_failed: "&cCould not send affinity request to {player}. Either you or they have reached the maximum number of affinities of this type, or a request already exists."
+  request_accept_failed: "&cCould not accept affinity request from {player}. Either you or they have reached the maximum number of affinities of this type."
+  
+  # Accept messages
+  accept_usage: "&cUsage: /affinity accept <player>"
+  request_accepted: "&aYou have accepted {player}'s affinity request."
+  request_accepted_target: "&a{player} has accepted your affinity request."
+  request_not_found: "&cYou don't have any pending requests from {player}."
+  
+  # Decline messages
+  decline_usage: "&cUsage: /affinity decline <player>"
+  request_declined: "&aYou have declined {player}'s affinity request."
+  request_declined_target: "&c{player} has declined your affinity request."
+  
+  # Delete messages
+  delete_usage: "&cUsage: /affinity delete <player>"
+  affinity_deleted: "&aYou have deleted your affinity with {player}."
+  affinity_deleted_target: "&c{player} has deleted their affinity with you."
+  affinity_not_found: "&cYou don't have an affinity with {player}."
+  
+  # List messages
+  no_affinities: "&cYou don't have any affinities or pending requests."
+  affinity_list_header: "&6=== Your Affinities ==="
+  affinity_list_subheader: "&eYour current affinities:"
+  affinity_list_item: "&a- {player}: {type} (since {since})"
+  request_list_subheader: "&ePending requests:"
+  request_list_item: "&e- {player}: {type} (sent on {time})"
+  
+  # Admin messages
+  admin_types_current: "&aCurrent affinity types: {types}"
+  admin_types_updated: "&aAffinity types updated to: {types}"
+  admin_max_current: "&aCurrent maximum affinities per player: {max}"
+  admin_max_invalid: "&cMaximum affinities must be a positive number."
+  admin_max_updated: "&aMaximum affinities per player updated to {max}."
+  admin_max_updated_all: "&aMaximum affinities for all types have been updated."
+  admin_type_deleted: "&aAffinity type {type} has been deleted."
+  admin_type_delete_failed: "&cFailed to delete affinity type {type}."
+  admin_type_added: "&aAdded new affinity type {type} with maximum of {max}."
+  admin_type_add_failed: "&cFailed to add affinity type {type}. It may already exist."
+  admin_type_renamed: "&aRenamed affinity type from {old_type} to {new_type}."
+  admin_max_updated_type: "&aUpdated maximum for {type} to {max}."
+  
+  # Join/Quit notifications
+  affinity_partner_joined: "&d❤ Your {type} {player} has joined the server!"
+  affinity_partner_left: "&d❤ Your {type} {player} has left the server."
+  
+  # UI messages
+  ui_main_title: "XzAffinity"
+  ui_main_content: "Select an option below:"
+  ui_main_request: "Send Request"
+  ui_main_requests: "View Requests"
+  ui_main_delete: "Delete Affinity"
+  ui_main_list: "List Affinities"
+  ui_main_types: "View Affinity Types"
+  
+  # Player list UI
+  ui_player_list_title: "Select Player"
+  ui_player_list_content: "Select a player to send an affinity request:"
+  ui_player_list_button: "{player}"
+  ui_player_list_empty: "&cThere are no other players online."
+  
+  # Type selection UI
+  ui_type_selection_title: "Select Affinity Type"
+  ui_type_selection_content: "Select an affinity type to request from {player}:"
+  ui_type_selection_button: "{type} ({current}/{max})"
+  ui_type_selection_empty: "&cThere are no affinity types available."
+  
+  ui_request_title: "Send Affinity Request"
+  ui_request_content: "Enter the player name and select the affinity type:"
+  ui_request_input: "Player Name"
+  ui_request_type: "Affinity Type"
+  ui_request_empty_name: "&cPlease enter a player name."
+  
+  ui_requests_title: "Pending Requests"
+  ui_requests_content: "Select a request to accept or decline:"
+  ui_requests_button: "{player} - {type}"
+  ui_requests_empty: "&cYou don't have any pending requests."
+  
+  ui_request_action_title: "Request Action"
+  ui_request_action_content: "Request from {player} for {type}.\nWhat would you like to do?"
+  ui_request_action_accept: "Accept"
+  ui_request_action_decline: "Decline"
+  
+  ui_delete_title: "Delete Affinity"
+  ui_delete_content: "Select an affinity to delete:"
+  ui_delete_button: "{player} - {type}"
+  ui_delete_empty: "&cYou don't have any affinities to delete."
+  
+  ui_delete_confirm_title: "Confirm Deletion"
+  ui_delete_confirm_content: "Are you sure you want to delete your {type} affinity with {player}?"
+  ui_delete_confirm_yes: "Yes, Delete"
+  ui_delete_confirm_no: "No, Cancel"
+  
+  ui_list_title: "Your Affinities"
+  ui_list_affinities_header: "Your current affinities:"
+  ui_list_affinities_item: "- {player}: {type} (since {since})"
+  ui_list_requests_header: "Pending requests:"
+  ui_list_requests_item: "- {player}: {type} (sent on {time})"
+  ui_list_close: "Close"
+  
+  ui_types_title: "Affinity Types"
+  ui_types_content: "Available affinity types and their maximum limits:"
+  ui_types_item: "- {type}: Maximum {max} per player"
+  ui_types_close: "Close"
+  
+  ui_admin_title: "XzAffinity Admin"
+  ui_admin_content: "Select an admin option:"
+  ui_admin_manage_types: "Manage Affinity Types"
+  ui_admin_add_type: "Add New Affinity Type"
+  
+  ui_admin_types_list_title: "Manage Affinity Types"
+  ui_admin_types_list_content: "Select a type to manage:"
+  ui_admin_types_list_button: "{type} (Max: {max})"
+  ui_admin_types_empty: "&cThere are no affinity types to manage."
+  
+  ui_admin_type_action_title: "Manage Type"
+  ui_admin_type_action_content: "What would you like to do with {type}?"
+  ui_admin_type_action_edit: "Edit"
+  ui_admin_type_action_delete: "Delete"
+  ui_admin_type_action_back: "Back to List"
+  
+  ui_admin_edit_type_title: "Edit Affinity Type"
+  ui_admin_edit_type_content: "Edit the name and maximum for {type}:"
+  ui_admin_edit_type_input: "Type Name"
+  ui_admin_edit_type_slider: "Maximum Affinities"
+  ui_admin_edit_type_empty: "&cType name cannot be empty."
+  
+  ui_admin_delete_type_title: "Delete Affinity Type"
+  ui_admin_delete_type_content: "Are you sure you want to delete the affinity type {type}?\nThis will remove all affinities of this type!"
+  ui_admin_delete_type_confirm: "Yes, Delete"
+  ui_admin_delete_type_cancel: "No, Cancel"
+  
+  ui_admin_add_type_title: "Add Affinity Type"
+  ui_admin_add_type_content: "Enter a name and maximum for the new affinity type:"
+  ui_admin_add_type_input: "Type Name"
+  ui_admin_add_type_slider: "Maximum Affinities"
+  ui_admin_add_type_empty: "&cType name cannot be empty."
+  
