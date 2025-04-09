@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace jojoe77777\FormAPI;
+namespace IndraMC\XzAffinity\libs\jojoe77777\FormAPI;
 
 use pocketmine\form\FormValidationException;
 use function count;
