@@ -1,5 +1,5 @@
 
-## 📋 About
+## 📋 Overview
 
 **XzAffinity** is a comprehensive relationship system for PocketMine-MP servers, inspired by Mobile Legends' affinity system. It allows players to form special relationships with each other, such as Lovers, Best Friends, Siblings, or Rivals. This plugin enhances player interaction and creates a more engaging social experience on your server.
 
@@ -18,10 +18,10 @@ Developed by **IndraMC**, XzAffinity features an intuitive UI system powered by 
 
 ## 📥 Installation
 
-1. Download the latest version of XzAffinity from [Poggit](https://poggit.pmmp.io/p/XzAffinity/v1.0.0)
+1. Download the latest version of XzAffinity from [Poggit](https://poggit.pmmp.io/p/XzAffinity)
 3. Place both plugins in your server's `plugins` folder
 4. Restart your server
-5. Configure the plugin settings in `plugins/XzAffinity/config.yml` (optional)
+5. Configure the plugin settings in `plugin_data/XzAffinity/config.yml` (optional)
 
 ## 🔧 Commands
 
