@@ -18,7 +18,7 @@ Developed by **IndraMC**, XzAffinity features an intuitive UI system powered by 
 
 ## 📥 Installation
 
-1. Download the latest version of XzAffinity from [Poggit](https://poggit.pmmp.io/releases/XzAffinity)
+1. Download the latest version of XzAffinity from [Poggit](https://poggit.pmmp.io/p/XzAffinity/v1.0.0)
 3. Place both plugins in your server's `plugins` folder
 4. Restart your server
 5. Configure the plugin settings in `plugins/XzAffinity/config.yml` (optional)
