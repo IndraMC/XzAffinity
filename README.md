@@ -18,8 +18,7 @@ Developed by **IndraMC**, XzAffinity features an intuitive UI system powered by 
 
 ## 📥 Installation
 
-1. Download the latest version of XzAffinity from [Poggit](https://github.com/IndraMC/XzAffinity)
-2. Download and install [FormAPI](https://github.com/jojoe77777/FormAPI) by jojoe77777 (required dependency)
+1. Download the latest version of XzAffinity from [Poggit](https://poggit.pmmp.io/releases/XzAffinity)
 3. Place both plugins in your server's `plugins` folder
 4. Restart your server
 5. Configure the plugin settings in `plugins/XzAffinity/config.yml` (optional)
