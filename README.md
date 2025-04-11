@@ -97,7 +97,7 @@ max_affinities:
 ```
 
 ## 🙏 Credits
-Developer: IndraMC
-UI Library: FormAPI by jojoe77777
-GitHub: [LordzDraa](https://github.com/IndraMC)
-Discord: IndraMC#7345
+- Developer: IndraMC
+- UI Library: FormAPI by jojoe77777
+- GitHub: [LordzDraa](https://github.com/IndraMC)
+- Discord: IndraMC#7345
