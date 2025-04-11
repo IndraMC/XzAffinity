@@ -16,6 +16,26 @@ Developed by **IndraMC**, XzAffinity features an intuitive UI system powered by 
 - **Per-Type Limits**: Set different maximum limits for each affinity type
 - **Fully Configurable**: Customize all messages and settings
 
+## 🗒️ Example usage
+
+### Player
+- Sending an request type `/affinity request` or select `send request` from main menu
+- select a player from the list and choose an affinity type to request
+- the player will receiver a notification about your request
+- accepting/declining requests type `/affinity` or `/affinity accept` to open the requests menu
+- Select the request you want to manage
+- Choose to accept or decline the request
+- Both players will be notified of the decision
+- Managing Affinities
+- Type `/affinity list` to view your current affinities
+- Use `/affinity delete <player>` to remove an affinity
+
+### Admin
+- Type `/affinityadmin` to open the admin menu
+- Select `Manage Affinity Types` to view, edit, or delete types
+- Select `Add New Affinity` Type to create a new type
+
+
 ## 📥 Installation
 
 1. Download the latest version of XzAffinity from [Poggit](https://poggit.pmmp.io/p/XzAffinity)
@@ -74,3 +94,10 @@ max_affinities:
   "Rivals": 3
 
 # You can customize all messages in the messages section
+```
+
+## 🙏 Credits
+Developer: IndraMC
+UI Library: FormAPI by jojoe77777
+GitHub: [LordzDraa](https://github.com/IndraMC)
+Discord: IndraMC#7345
