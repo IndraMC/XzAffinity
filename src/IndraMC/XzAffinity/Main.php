@@ -15,8 +15,8 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 use IndraMC\XzAffinity\commands\AffinityCommand;
 use IndraMC\XzAffinity\commands\AffinityAdminCommand;
-use jojoe77777\FormAPI\SimpleForm;
-use jojoe77777\FormAPI\CustomForm;
+use IndraMC\XzAffinity\libs\jojoe77777\FormAPI\SimpleForm;
+use IndraMC\XzAffinity\libs\jojoe77777\FormAPI\CustomForm;
 
 class Main extends PluginBase implements Listener {
     /** @var Config */
