@@ -4,7 +4,6 @@ api: 5.0.0
 main: IndraMC\XzAffinity\Main
 author: IndraMC
 description: Affinity system for PocketMine-MP servers
-depend: [FormAPI]
 
 permissions:
   xzaffinity.command.use:
