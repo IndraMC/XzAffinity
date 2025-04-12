@@ -40,13 +40,6 @@ class Main extends PluginBase implements Listener {
     public function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         
-        // Check for FormAPI dependency
-        if (!class_exists(SimpleForm::class)) {
-            $this->getLogger()->error("FormAPI not found! Please install FormAPI by jojoe77777.");
-            $this->getServer()->getPluginManager()->disablePlugin($this);
-            return;
-        }
-        
         // Create plugin directory if it doesn't exist
         @mkdir($this->getDataFolder());
         
