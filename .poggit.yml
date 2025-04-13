@@ -5,5 +5,5 @@ branches:
 projects:
   XzAffinity:
     path: ""
-    icon: "Icon.png"
+    icon: "icon.png"
 ...
