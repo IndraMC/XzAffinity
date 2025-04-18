@@ -684,7 +684,7 @@ class Main extends PluginBase implements Listener {
      * @param string $type
      */
     public function showRequestActionForm(Player $player, string $requester, string $type): void {
-        $form = new SimpleForm(function (Player $player, ?int $data) use ($requester) {
+        $form = new SimpleForm(function (Player $player, ?int $data) use ($requester, $type) {
             if ($data === null) {
                 return;
             }
