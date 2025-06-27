@@ -83,13 +83,13 @@ class Main extends PluginBase implements Listener {
         $this->getServer()->getCommandMap()->register("xzaffinity", new AffinityCommand($this));
         $this->getServer()->getCommandMap()->register("xzaffinityadmin", new AffinityAdminCommand($this));
         
-        $this->getLogger()->info(TextFormat::GREEN . "XzAffinity by IndraMC has been enabled!");
+        
     }
     
     public function onDisable(): void {
         // Save all data
         $this->saveAllData();
-        $this->getLogger()->info(TextFormat::RED . "XzAffinity by IndraMC has been disabled!");
+        
     }
     
     /**
