@@ -17,7 +17,7 @@ class AffinityCommand extends Command implements PluginOwned {
     private Main $plugin;
     
     public function __construct(Main $plugin) {
-        parent::__construct("affinity", "Manage your affinities", "/affinity <request|accept|decline|delete|list|types>");
+        parent::__construct("xzaffinity", "Manage your affinities", "/affinity <request|accept|decline|delete|list|types>");
         $this->setPermission("xzaffinity.command.use");
         $this->plugin = $plugin;
     }
