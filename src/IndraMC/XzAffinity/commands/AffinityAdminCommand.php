@@ -17,7 +17,7 @@ class AffinityAdminCommand extends Command implements PluginOwned {
     private Main $plugin;
     
     public function __construct(Main $plugin) {
-        parent::__construct("affinityadmin", "Admin commands for XzAffinity", "/affinityadmin");
+        parent::__construct("xzaffinityadmin", "Admin commands for XzAffinity", "/affinityadmin");
         $this->setPermission("xzaffinity.command.admin");
         $this->plugin = $plugin;
     }
